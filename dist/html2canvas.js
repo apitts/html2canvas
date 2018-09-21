@@ -6272,6 +6272,10 @@ var DocumentCloner = exports.DocumentCloner = function () {
                             tempIframe.parentNode.replaceChild((0, _Util.copyCSSStyles)(node.ownerDocument.defaultView.getComputedStyle(node), iframeCanvas), tempIframe);
                         }
                     });
+                }).catch(function (e) {
+                    if (true) {
+                        _this3.logger.log('Error', e);
+                    }
                 });
                 return tempIframe;
             }
